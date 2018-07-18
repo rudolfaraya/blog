@@ -1,0 +1,5 @@
+rails new blog                                                                      # Crear aplicación rails blog
+rails generate controller welcome index                                             # Crear un controlador welcome con un método index
+rails generate model Article title body:text visits_count:integer                   # Crear modelo Article con los campos title, body y visits_count
+rake db:migrate                                                                     # Ejecuta migración para crear tabla Articles
+#rake db:rollback                                                                   # Revierte la última migración ejecutada
