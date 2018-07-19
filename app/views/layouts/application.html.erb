@@ -8,27 +8,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header>
-    <nav class="be-blue white large-padding">
-      <ul class="no-list row center-xs middle-xs">
-        <li class="col-md">
-          <h1 class="no-margin" id="logo">Blog</h1>
-        </li>
-        <li class="col-md">
-          <%= link_to "Inicio", root_path%>
-        </li>
-        <li class="col-md">
-          Diseño
-        </li>
-        <li class="col-md">
-          Programación
-        </li>
-        <li class="col-md">
-          Tecnología
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <%= render "partials/navigation" %>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 
 <%= yield %>
 

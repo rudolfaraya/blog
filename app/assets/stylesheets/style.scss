@@ -44,12 +44,12 @@ ul{
   list-style-type:none;
 }
 
-.field{
+.field,.top-space,.actions{
   margin-top: 1em;
 }
 
-.top-space{
-  margin-top: 1em;
+.text-left{
+  text-align: left;
 }
 
 .form-control{
