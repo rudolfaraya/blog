@@ -12,34 +12,46 @@ html, body{
   padding: 10px 12px;
 
 }
+.red{
+  color: #B00100 !important;
+}
+
 a,a:visited{
-  color: inherit !important;
+  color: inherit;
   text-decoration: none;
 }
+
 #logo{
   font-size: 1.2em;
 }
 .no-margin{
   margin: 0px;
 }
+
 .be-blue{
   background-color: rgb(19,48,70);
 }
+
 .white{
   color: rgb(218,254,255);
 }
+
 .large-padding{
   padding: 10px 7px;
 }
+
 ul{
   list-style-type:none;
 }
+
 .field{
   margin-top: 1em;
 }
+
 .top-space{
   margin-top: 1em;
 }
+
 .form-control{
   border: none;
   border-bottom: 1px solid;
