@@ -2,6 +2,16 @@ html, body{
   margin: 0px;
   font-family: 'Roboto', sans-serif;
 }
+.btn{
+  background-color: inherit;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 10px 12px;
+
+}
 a,a:visited{
   color: inherit !important;
   text-decoration: none;
@@ -23,4 +33,19 @@ a,a:visited{
 }
 ul{
   list-style-type:none;
+}
+.field{
+  margin-top: 1em;
+}
+.top-space{
+  margin-top: 1em;
+}
+.form-control{
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  width: 100%;
+  display: block;
+  padding: 10px 0px;
+  font-size: 1.2em;
 }
