@@ -10,4 +10,4 @@ rake db:migrate                                                                 
 rails generate devise:views                                                         # Copia las vistas de la gema 'devise' para editarlas posteriormente
 rails generate migration add_user_id_to_articles user:references                    # Agrega 'user_id' a la tabla 'articles' como referencia a 'users'
 rake db:migrate                                                                     # Ejecuta migración agregar la migración
-
+rails generate scaffold Comment user:references article:references body:text        # Genera modelo, vista y controlador para 'Comment'
