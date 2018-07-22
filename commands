@@ -8,3 +8,6 @@ rails generate devise:install                                                   
 rails generate devise User                                                          # Generar modelo User con los módulos de 'devise'
 rake db:migrate                                                                     # Ejecuta migración para crear tabla 'Users'
 rails generate devise:views                                                         # Copia las vistas de la gema 'devise' para editarlas posteriormente
+rails generate migration add_user_id_to_articles user:references                    # Agrega 'user_id' a la tabla 'articles' como referencia a 'users'
+rake db:migrate                                                                     # Ejecuta migración agregar la migración
+
