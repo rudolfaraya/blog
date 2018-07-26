@@ -2,19 +2,10 @@
   <nav class="be-blue white large-padding">
     <ul class="no-list row center-xs middle-xs">
       <li class="col-md">
-        <h1 class="no-margin" id="logo">Blog</h1>
+        <h1 class="no-margin" id="logo"><%= link_to "Blog Facilito", root_path %></h1>
       </li>
       <li class="col-md">
-        <%= link_to "Inicio", root_path%>
-      </li>
-      <li class="col-md">
-        Diseño
-      </li>
-      <li class="col-md">
-        Programación
-      </li>
-      <li class="col-md">
-        Tecnología
+        <%= link_to "Artículos", articles_path %>
       </li>
       <% if user_signed_in? %>
         <li class="col-md">

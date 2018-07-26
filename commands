@@ -12,3 +12,6 @@ rails generate migration add_user_id_to_articles user:references                
 rake db:migrate                                                                     # Ejecuta migración agregar la referencia
 rails generate scaffold Comment user:references article:references body:text        # Genera modelo, vista y controlador para 'Comment'
 rake db:migrate                                                                     # Ejecuta migración agregar tabla 'Comment'
+bundle install                                                                      # Después de agregar gema 'paperclip' e instalado 'ImageMagick'
+rails generate migration add_cover_to_articles                                      # Agrega el campo 'cover' a la tabla 'articles'
+rake db:migrate                                                                     # Ejecuta migración para agregar el campo 'cover'

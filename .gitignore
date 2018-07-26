@@ -18,3 +18,6 @@
 
 # Ignore IDE folders
 .idea/*
+
+# Ignore public folder
+public/*
