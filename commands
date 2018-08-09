@@ -21,6 +21,8 @@ rails generate model HasCategory article:references category:references         
 rake db:migrate                                                                     # Ejecuta migración agregar 'HasCategory'
 rails generate migration change_column_permission_level_from_string_to_integer      # Cambia el campo 'permission_level' de string a integer de la tabla 'users'
 rake db:migrate                                                                     # Ejecuta migración cambiar columna 'permission_level'
+rails generate migration add_column_state_to_articles state                         # Agrega columna 'state' a tabla 'articles'
+bundle install                                                                      # Después de agregar gema 'aasm'
 
 
 
