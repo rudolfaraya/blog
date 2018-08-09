@@ -17,7 +17,7 @@ class Article < ActiveRecord::Base
   validates_attachment_content_type :cover, content_type: /\Aimage/
 
   scope :published, -> { where(state: "published") }
-  scope :lastest, -> { order("created_at DESC").limit(10) }
+  scope :lastest, -> { order("created_at DESC") }
 
 
   # EQUIVALENT SCOPE

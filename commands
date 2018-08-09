@@ -23,6 +23,7 @@ rails generate migration change_column_permission_level_from_string_to_integer  
 rake db:migrate                                                                     # Ejecuta migración cambiar columna 'permission_level'
 rails generate migration add_column_state_to_articles state                         # Agrega columna 'state' a tabla 'articles'
 bundle install                                                                      # Después de agregar gema 'aasm'
+bundle install                                                                      # Después de agregar gema 'will_paginate'
 
 
 

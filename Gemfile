@@ -29,6 +29,8 @@ gem 'devise'
 gem 'paperclip'
 # AASM - State machines for Ruby classes (plain Ruby, ActiveRecord, Mongoid)
 gem 'aasm'
+# will_paginate is a pagination library that integrates with Ruby on Rails
+gem 'will_paginate'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
