@@ -19,6 +19,8 @@ rails generate scaffold Category name color                                     
 rake db:migrate                                                                     # Ejecuta migración agregar tabla 'Category'
 rails generate model HasCategory article:references category:references             # Crea el modelo 'HasCategory' que relaciona 'Article' con 'Category'
 rake db:migrate                                                                     # Ejecuta migración agregar 'HasCategory'
+rails generate migration change_column_permission_level_from_string_to_integer      # Cambia el campo 'permission_level' de string a integer de la tabla 'users'
+rake db:migrate                                                                     # Ejecuta migración cambiar columna 'permission_level'
 
 
 
