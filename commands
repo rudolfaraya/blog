@@ -5,7 +5,7 @@ rake db:migrate                                                                 
 #rake db:rollback                                                                   # Revierte la última migración ejecutada
 bundle install                                                                      # Después de agregar gema 'devise' al Gemfile, instalar
 rails generate devise:install                                                       # Es necesario ejecutar el generador para instalar 'devise'
-rails generate devise User                                                          # Generar modelo User con los módulos de 'devise'
+rails generate devise User                                                          # Generar modelo 'User' con los módulos de 'devise'
 rake db:migrate                                                                     # Ejecuta migración para crear tabla 'Users'
 rails generate devise:views                                                         # Copia las vistas de la gema 'devise' para editarlas posteriormente
 rails generate migration add_user_id_to_articles user:references                    # Agrega 'user_id' a la tabla 'articles' como referencia a 'users'
@@ -15,3 +15,10 @@ rake db:migrate                                                                 
 bundle install                                                                      # Después de agregar gema 'paperclip' e instalado 'ImageMagick'
 rails generate migration add_cover_to_articles                                      # Agrega el campo 'cover' a la tabla 'articles'
 rake db:migrate                                                                     # Ejecuta migración para agregar el campo 'cover'
+rails generate scaffold Category name color                                         # Genera modelo, vista y controlador para 'Category' con los campos 'name' y 'color'
+rake db:migrate                                                                     # Ejecuta migración agregar tabla 'Category'
+rails generate model HasCategory article:references category:references             # Crea el modelo 'HasCategory' que relaciona 'Article' con 'Category'
+rake db:migrate                                                                     # Ejecuta migración agregar 'HasCategory'
+
+
+

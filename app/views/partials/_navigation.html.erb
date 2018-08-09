@@ -7,6 +7,11 @@
       <li class="col-md">
         <%= link_to "Artículos", articles_path %>
       </li>
+      <% @categories.each do |category| %>
+        <li class="col-md">
+          <%= link_to category.name, category %>
+        </li>
+      <% end %>
       <% if user_signed_in? %>
         <li class="col-md">
           <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %>
