@@ -31,6 +31,8 @@ gem 'paperclip'
 gem 'aasm'
 # will_paginate is a pagination library that integrates with Ruby on Rails
 gem 'will_paginate'
+# An embeddable JavaScript Markdown editor
+gem 'epic-editor-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -50,7 +52,17 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
+  gem 'rspec-rails', '~> 3.5'
+
+  gem 'factory_bot_rails', '~> 4.0'
+
+  gem 'faker'
+
+  gem 'capybara'
+
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+# Code coverage analysis tool for Ruby
+gem 'simplecov'
 

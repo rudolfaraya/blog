@@ -24,6 +24,9 @@ rake db:migrate                                                                 
 rails generate migration add_column_state_to_articles state                         # Agrega columna 'state' a tabla 'articles'
 bundle install                                                                      # Después de agregar gema 'aasm'
 bundle install                                                                      # Después de agregar gema 'will_paginate'
+rails generate rspec:install
+RAILS_ENV=test rake db:migrate
+
 
 
 
