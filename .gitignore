@@ -21,3 +21,6 @@
 
 # Ignore public folder
 public/*
+
+# Ignore code coverage reports
+coverage/*
